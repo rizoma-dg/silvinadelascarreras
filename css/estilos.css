@@ -359,7 +359,7 @@ li.item-menu.activo{
 }
 
 h1{
-	font-size: 3em;
+	font-size: 2.5em;
 	font-family: 'Montserrat-thin';
 	letter-spacing: -0.1rem;
 	line-height: auto;
@@ -403,6 +403,13 @@ em{
 	text-align: center;
 	width: 50%;
 }
+
+@media screen and (max-width: 800px){
+	.item-serie{
+		width: 100%;
+	}
+}
+
 .item-serie img{
 	width: 80%;
 	margin: auto;
