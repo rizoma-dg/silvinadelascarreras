@@ -295,10 +295,22 @@ li.item-menu.item-series {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: space-around;
-    height: 2.4375rem;
+    justify-content: center;
+    height: 3.1rem;
     box-sizing: border-box;
     line-height: 1em;
+}
+
+li.item-menu a.corto,
+li.item-menu.item-series {
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 2.5rem;
+}
+
+li.item-menu a span {
+    margin: 0.11rem 0;
 }
 
 li.item-menu a{
