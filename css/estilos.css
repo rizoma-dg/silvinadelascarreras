@@ -313,24 +313,19 @@ a:visited{
 }
 
 @media screen and (max-width: 800px){
-	.lista-menu{
-	  border-right: 0;
+	nav.menu-principal {
+	    border: 1px solid blue;
+	    position: fixed;
+	    width: 100%;
+	    top: -100vh;
+	    transition: 0.8s;
+	}
+
+	nav.menu-principal.activo {
+	    top: 4.875rem;
+	    transition: 0.8s;
 	}
 }
-
-nav.menu-principal {
-    border: 1px solid blue;
-    position: fixed;
-    width: 100%;
-    top: -100vh;
-    transition: 0.8s;
-}
-
-nav.menu-principal.activo {
-    top: 4.875rem;
-    transition: 0.8s;
-}
-
 
 li.item-menu.primario {
     text-transform: uppercase;
