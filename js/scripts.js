@@ -12,8 +12,15 @@ $(document).ready(function(){
 
   //Interfaz
 
-  $('.icono-menu-mobile').click(function(){
-    $('nav.menu-principal').toggleClass('activo');
-  });
+eventBinding_toggleMenu();
+
+//Lo guardo en una variable por razones de testeo
+var eventBinding_toggleMenu = function(){
+                                $('.icono-menu-mobile').click(function(){
+                                  console.log('click menu');
+                                  $('nav.menu-principal').toggleClass('activo');
+                                });
+                              }
+
 
 });
