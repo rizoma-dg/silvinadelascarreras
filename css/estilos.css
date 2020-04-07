@@ -446,6 +446,17 @@ em{
 	font-style: italic;
 }
 
+/* SERIES */
+
+.contenedor-textos-series {
+    display: flex;
+}
+
+.texto-series {
+    width: 50%;
+}
+
+
 	/* ITEMS DE SERIE */
 
 .contenedor-serie{
@@ -459,14 +470,9 @@ em{
 	justify-content: flex-end;
 	align-items: center;
 	text-align: center;
-	width: 50%;
+	width: 100%;
 }
 
-@media screen and (max-width: 800px){
-	.item-serie{
-		width: 100%;
-	}
-}
 
 .item-serie img{
 	width: 80%;
