@@ -397,12 +397,24 @@ li.item-menu.activo{
 
 /* PÁGINAS CON TEXTO */
 
+@media screen and (max-width: 800px){
+	.margin-header {
+	    margin-top: 4.875rem;
+	}
+}
+
 .banner-titulo{
-	display: flex;
-	align-items: center;
-	background-color: var(--marron-claro);
-	box-sizing: border-box;
-	height: 4.875rem;
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	.banner-titulo{
+		display: flex;
+		align-items: center;
+		background-color: var(--marron-claro);
+		box-sizing: border-box;
+		height: 4.875rem;
+	}
 }
 
 h1{
