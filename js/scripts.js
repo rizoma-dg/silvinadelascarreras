@@ -10,4 +10,10 @@ $(document).ready(function(){
     autoplaySpeed: 2000
   });
 
+  //Interfaz
+
+  $('.icono-menu-mobile').click(function(){
+    $('nav.menu-principal').toggleClass('activo');
+  });
+
 });

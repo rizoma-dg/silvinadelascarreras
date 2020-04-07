@@ -139,12 +139,14 @@ a:visited{
 .col-50{width: 50%}
 .col-75{width: 75%}
 .col-100{width: 100%}
+.col-0{width: 0px}
 
 @media screen and (max-width: 800px){
   .m-col-25{width: 25%}
   .m-col-50{width: 50%}
   .m-col-75{width: 75%}
   .m-col-100{width: 100%}
+	.m-col-0{width: 0px}
 }
 
 /* Offsets */
@@ -266,10 +268,42 @@ a:visited{
     line-height: 2rem;
     letter-spacing: -0.1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: 'Montserrat-regular';
     color: #555555;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.col-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-menu-mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icono-menu-mobile {
+		background-image: url('../img/menu-icono-mobile.png');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+	.titulo{
+		position: fixed;
+		z-index: 1;
+		background-color: white;
+	}
 }
 
 .titulo-grande{
@@ -284,6 +318,19 @@ a:visited{
 	}
 }
 
+nav.menu-principal {
+    border: 1px solid blue;
+    position: fixed;
+    width: 100%;
+    top: -100vh;
+    transition: 0.8s;
+}
+
+nav.menu-principal.activo {
+    top: 4.875rem;
+    transition: 0.8s;
+}
+
 
 li.item-menu.primario {
     text-transform: uppercase;
@@ -296,7 +343,7 @@ li.item-menu.item-series {
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    height: 3.1rem;
+    min-height: 3.1rem;
     box-sizing: border-box;
     line-height: 1em;
 }
@@ -328,13 +375,6 @@ li.item-menu.activo{
 }
 
 /* SLIDER */
-
-@media screen and (max-width: 800px){
-	.col-slider{
-		display: none;
-	}
-}
-
 
 .contenedor-slider-home{
 	height: 100%;
