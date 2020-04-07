@@ -14,6 +14,9 @@ $(document).ready(function(){
 
 eventBinding_toggleMenu();
 
+});
+
+
 //Lo guardo en una variable por razones de testeo
 var eventBinding_toggleMenu = function(){
                                 $('.icono-menu-mobile').click(function(){
@@ -21,6 +24,3 @@ var eventBinding_toggleMenu = function(){
                                   $('nav.menu-principal').toggleClass('activo');
                                 });
                               }
-
-
-});
