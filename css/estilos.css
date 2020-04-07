@@ -271,9 +271,14 @@ a:visited{
     display: flex;
     font-family: 'Montserrat-regular';
     color: #555555;
-    position: fixed;
     z-index: 1;
     background-color: white;
+}
+
+@media screen and (max-width: 800px){
+	.titulo{
+		position: fixed;
+	}
 }
 
 .col-titulo {
