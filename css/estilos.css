@@ -488,3 +488,12 @@ img.imagen-bio {
 		margin: 2em 0;
 	}
 }
+
+/* CONTACTO */
+
+img.icono-redes {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
