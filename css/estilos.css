@@ -250,6 +250,21 @@ a:visited{
 	.m-px-4{padding: 0, 6.5rem}
 }
 
+.contenedor-centrado-vertical-pagina{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* SIDEBAR */
 
 .col-menu{
@@ -278,6 +293,8 @@ a:visited{
 @media screen and (max-width: 800px){
 	.titulo{
 		position: fixed;
+		font-size: 1.6rem;
+		line-height: 1.6rem;
 	}
 }
 
@@ -319,7 +336,7 @@ a:visited{
 
 @media screen and (max-width: 800px){
 	nav.menu-principal {
-	    position: fixed;
+	    position: absolute;
 	    width: 100%;
 	    top: -100vh;
 	    transition: 0.8s;
@@ -331,6 +348,11 @@ a:visited{
 	    top: 4.875rem;
 	    transition: 0.8s;
 	}
+}
+
+li.item-menu {
+    display: flex;
+    align-items: center;
 }
 
 li.item-menu.primario {
@@ -366,13 +388,27 @@ li.item-menu a{
 }
 
 li.item-menu a:hover{
-  background-color: var(--marron-claro);
+  /* background-color: var(--marron-claro); */
   transition: 0,4s;
+	opacity: 0.5;
 }
 
 li.item-menu.activo{
 	font-weight: bold;
-	background-color: var(--marron-claro);
+	/* background-color: var(--marron-claro); */
+}
+
+li.item-menu::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 2em;
+    margin-right: 10px;
+}
+
+li.item-menu.activo::before{
+	border-left: 1px solid var(--marron-medio);
+	border-right: 1px solid var(--marron-medio);
 }
 
 /* SLIDER */
@@ -411,7 +447,7 @@ li.item-menu.activo{
 	.banner-titulo{
 		display: flex;
 		align-items: center;
-		background-color: var(--marron-claro);
+		/* background-color: var(--marron-claro); */
 		box-sizing: border-box;
 		height: 4.875rem;
 	}
@@ -423,6 +459,18 @@ h1{
   letter-spacing: -0.1rem;
   line-height: 0.8em;
 }
+
+.banner-titulo::before{
+	content: '';
+	display: block;
+	background-color: var(--marron-claro);
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	float: left;
+}
+
 /* Utilidad */
 .texto-claro{
 	color: var(--texto-claro);
