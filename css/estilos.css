@@ -336,12 +336,14 @@ a:visited{
 
 @media screen and (max-width: 800px){
 	nav.menu-principal {
-	    position: absolute;
+	    position: fixed;
 	    width: 100%;
 	    top: -100vh;
 	    transition: 0.8s;
-			z-index: 1;
-			background-color: white;
+	    z-index: 1;
+	    background-color: white;
+	    overflow: scroll;
+	    max-height: 80vh;
 	}
 
 	nav.menu-principal.activo {
