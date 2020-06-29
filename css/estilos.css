@@ -562,3 +562,20 @@ img.icono-redes {
     height: 25px;
     margin-right: 15px;
 }
+
+@media screen and (max-width: 800px){
+	.fbdesktop{
+		display: none;
+	}
+	.fbmobile{
+		display: inline;
+	}
+}
+@media screen and (min-width: 801px){
+	.fbdesktop{
+		display: inline;
+	}
+	.fbmobile{
+		display: none;
+	}
+}
