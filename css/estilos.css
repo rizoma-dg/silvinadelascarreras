@@ -362,8 +362,7 @@ li.item-menu.primario {
     font-weight: bold;
 }
 
-li.item-menu a,
-li.item-menu.item-series {
+li.item-menu a{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -373,8 +372,7 @@ li.item-menu.item-series {
     line-height: 1em;
 }
 
-li.item-menu a.corto,
-li.item-menu.item-series {
+li.item-menu a.corto{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
@@ -531,6 +529,9 @@ em{
 	width: 100%;
 }
 
+span.premios{
+	font-size: 0.85em;
+}
 
 .item-serie img{
 	width: 80%;
@@ -556,6 +557,13 @@ img.imagen-bio {
 }
 
 /* CONTACTO */
+
+.contenedor-pantalla-completa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
 
 img.icono-redes {
     width: 25px;
