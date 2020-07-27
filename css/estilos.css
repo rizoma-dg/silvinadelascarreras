@@ -87,6 +87,10 @@ table {
 
 /* TIPOGRAFÍA Y COLORES */
 
+.invisible{
+	display: none;
+}
+
 :root{
 	--negro: #000000;
   --marron-medio: #d1d1d1;
